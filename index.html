@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout2</title>
+</head>
+<style>
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,250px);
+    grid-template-rows: 100px;
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 10vh 0vw 0vw 20vw;
+
+}
+.grid>div{
+    /* background-color: yellow; */
+    color:white;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: left;
+    padding: 2vw;
+    
+
+}
+.grid>div:nth-child(1){
+    background-color: rgb(50, 27, 27);
+    grid-area: 1/1/2/3;
+}
+.grid>div:nth-child(2){
+    background-color: rgb(50, 27, 27);
+    grid-area: 1/3/3/4;
+}
+.grid>div:nth-child(3){
+    background-color: rgb(50, 27, 27);
+    grid-area: 2/1/3/2;
+}
+.grid>div:nth-child(4){
+    background-color: rgb(50, 27, 27);
+    grid-area: 2/2/3/3;
+}
+.grid>div:nth-child(5){
+    background-color: rgb(50, 27, 27);
+    grid-area: 1/4/3/5;
+    
+}
+
+</style>
+<body>
+    <div class="grid">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
